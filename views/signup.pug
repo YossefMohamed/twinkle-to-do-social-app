@@ -1,0 +1,15 @@
+extends base
+
+block content
+    form.form
+        .form-group
+            div
+            label.email-label(for="email") Email :
+            div
+            input#Email(type="email", name="email" , required , placeholder="Enter Your Email")
+            div
+            label.password-label(for="password") password :
+            div
+            input#password(type="password", name="password" , required , placeholder="Enter Your Email")
+            div 
+            input(type="button", value="Submit")

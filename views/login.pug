@@ -1,0 +1,22 @@
+extends base
+
+block content
+    form.form
+        .form-group
+            div
+            label.email-label(for="email") Email :
+            div
+            input#Email(type="email", name="email" , required , placeholder="Enter Your Email")
+            div
+            label.password-label(for="password") password :
+            div
+            input#password(type="password", name="password" , required , placeholder="Enter Your Email")
+            div 
+            input.submit(type="button", value="Submit")
+        if User
+            
+            h1= `Hi ${User.name}`
+            h1= `Hi ${User.email}`
+    script(src="index.js")
+    
+    
